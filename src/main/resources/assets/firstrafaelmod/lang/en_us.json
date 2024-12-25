@@ -1,3 +1,6 @@
 {
-  "item.firstrafelmod.sapphire": "Sapphire"
+  "item.firstrafelmod.sapphire": "Sapphire",
+  "item.firstrafelmod.raw_sapphire": "Raw Sapphire",
+
+  "creativetab.first_tab": "First Sapphire Tab"
 }

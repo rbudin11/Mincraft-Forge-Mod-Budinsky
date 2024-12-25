@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.rafael.firstrafaelmod.item.ModCreativeModTabs;
 import net.rafael.firstrafaelmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -27,6 +28,8 @@ public class FirstMod {
         IEventBus modEventBus = context.getModEventBus();
 
         ModItems.ITEMS.register(modEventBus);
+
+        ModCreativeModTabs.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -53,6 +56,7 @@ public class FirstMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
         }
     }
 
