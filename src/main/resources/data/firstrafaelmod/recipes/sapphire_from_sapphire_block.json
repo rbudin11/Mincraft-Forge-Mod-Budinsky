@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "firstrafaelmod:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "firstrafaelmod:sapphire",
+    "count": 9
+  }
+}
