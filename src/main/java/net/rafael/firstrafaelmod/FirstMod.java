@@ -16,7 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.rafael.firstrafaelmod.block.ModBlocks;
-import net.rafael.firstrafaelmod.item.ModCreativeModTabs;
+import net.rafael.firstrafaelmod.item.ModCreativeModeTabs;
 import net.rafael.firstrafaelmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -28,7 +28,7 @@ public class FirstMod {
     public FirstMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
-        ModCreativeModTabs.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.register(modEventBus);
